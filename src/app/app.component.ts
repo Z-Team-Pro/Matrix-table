@@ -24,8 +24,7 @@ export class AppComponent {
          this.test.push(combine[1]);}
         
     });
-    console.log('head',this.head);
-    console.log('test',this.test);
+   
    let header= this.head;
    let rows= this.test;
 rows.forEach(col => {
