@@ -40,10 +40,15 @@ rows.forEach(col => {
 });
 
 
+  }
 
+  //set the id of td 
 
-
-
- 
+  getTdId(col,index){
+    return col + " "+this.head[index];
+  }
+  //fetch td cell
+  fetchId(event){
+    console.log(event.target.id);
   }
 }

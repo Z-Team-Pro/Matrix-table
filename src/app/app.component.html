@@ -7,8 +7,8 @@
 </thead>  
 <tbody>
 <tr *ngFor= "let row of all">
-<td>{{row.col}}</td>
-<td *ngFor="let price of row.data">
+<td  >{{row.col}}</td>
+<td *ngFor="let price of row.data ; let i =index"  [id]="getTdId(row.col,i)" (click)=fetchId($event)  >
   {{price}}
 </td>
 
