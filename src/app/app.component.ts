@@ -13,6 +13,7 @@ export class AppComponent {
   head=[];
   test=[];
   constructor(private data:DataService){
+    localStorage.setItem('user','test');
    this.prices=this.data.getdata();
    let keys=Object.keys(this.prices);
    
