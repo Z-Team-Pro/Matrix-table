@@ -7,12 +7,14 @@ import { DataService } from './data.service';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { masterRoutes } from './app.routes';
+import { LoadingComponent } from './loading/loading.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

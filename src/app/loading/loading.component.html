@@ -1,0 +1,13 @@
+
+<table class="table table-bordered">
+  <thead>
+    <th>id</th>
+    <th>title</th>
+    <th>body</th>
+  </thead>
+  <tr *ngFor="let item of loading_data | slice:0:max; " >
+    <td>  {{item.id}}</td>
+  <td>{{item.title}}</td>
+  <td>{{item.body}}</td>
+  </tr>
+  </table>
